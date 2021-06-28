@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "outDir": "./build/",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "./**/typings"
+    ],
+    "lib": [
+      "es2020"
+    ],
+    "rootDirs": [
+      "./"
+    ],
+    "baseUrl": ".",
+    "types": [
+      "mocha",
+      "node"
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "include": [
+    "./**/*.ts",
+    "./node_modules/common/**/*.ts",
+    "./node_modules/config/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
